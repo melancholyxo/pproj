@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact/About Us | CyberSafeFamily</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/images/logo/cyberlogo.png">
+  <script src="https://kit.fontawesome.com/41131581cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- navigation menu, right side of page -->
+<section class="header">
+    <nav>
+      <a href="index.html"><img src="images/logo/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contactaboutus.html">Contact/About</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+
+<div class="text-box-pages">
+  <h1>Contact | About Us</h1>
+</div>
+
+<div class="aboutuspage">
+<h1>Who we are</h1>
+<p>Internet safety is of paramount importance in ensuring that children can navigate the online world safely and responsibly. From cyberbullying and online predators to exposure to inappropriate content, the internet presents a myriad of dangers that parents and children alike must be aware of and prepared to address.<br><br>
+
+  At our website, we recognize the critical role that both parents and children play in promoting internet safety. By working together, parents can empower their children with the knowledge and skills necessary to navigate the internet safely, while also establishing open lines of communication to address any concerns or issues that may arise.<br><br>
+  
+  Through informative articles, practical tips, and helpful resources, our website aims to equip parents with the tools they need to guide their children in using the internet responsibly and safely. Together, let's create a safer online environment for our children, where they can explore, learn, and connect with confidence.</p>
+</div>
+
+<div class="contactcontent">
+  <h1>Connect With Us</h1>
+  <p>Contact us if you have any questions!</p>
+  <div class="contact-box">
+    <div class="contact-left">
+      <h3>Send your request</h3>
+      <form id="form" method="post" action="contactform.php">
+        <div class="input-row">
+          <div class="input-group">
+            <label>Name</label>
+            <input type="text">
+          </div>
+          <div class="input-group">
+            <label>Phone</label>
+            <input type="text">
+          </div>
+          <div class="input-group">
+            <label>Email</label>
+            <input type="text">
+          </div>
+          <div class="input-group">
+            <label>Subject</label>
+            <input type="text">
+          </div>
+        </div>
+        <br>
+        <label>Message</label>
+        <textarea rows="5"></textarea> 
+        <br><br>
+        <button class="hero-btn-alt" type="submit" disabled>Send</button>
+      </form>
+    </div>
+    <div class="contact-right">
+      <h3>Contact</h3>
+      <table>
+        <tr>
+          <td>Email</td>
+          <td>diya-a@ishelsinki.fi</td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td>012 345 6789</td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td>Selkamerenkatu 11</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+
+<section class="footer">
+  <a href="contactaboutus.html">
+    <h4>About Us</h4>
+  </a>
+  <p>Thank you for viewing my website! I hope you've learnt something new about how you can stay safe online!</p>
+  <div class="icons">
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+    <i class="fa fa-linkedin" aria-hidden="true"></i>
+  </div>
+  <p>Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Diya</p>
+</section>
+
+<!-- javascript for toggle menu -->
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+</script>
+
+</body>
+</html>
